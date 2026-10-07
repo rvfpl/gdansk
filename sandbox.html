@@ -15,10 +15,12 @@ items:
 <div style="background-color: #fff3cd; border-left: 5px solid {{ page.custom_color }}; padding: 15px; margin: 20px 0;">
   <h3>Loop Test Below:</h3>
   <ul>
+    <!-- The Loop Magic Starts Here -->
     {% for item in page.items %}
       <li>{{ item }}</li>
     {% endfor %}
+    <!-- The Loop Magic Ends Here -->
   </ul>
 </div>
 
-<p><a href="/">← Go back to the homepage</a></p>
+<p><a href="./">← Go back to the homepage</a></p>
