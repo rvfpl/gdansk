@@ -1,1 +1,24 @@
+---
+layout: default
+title: My Experiment Lab
+headline: 🧪 The Jekyll Sandbox
+custom_color: "#ff5733"
+items:
+  - Testing Injection 1
+  - Testing Injection 2
+  - Testing Injection 3
+---
 
+<h1>{{ page.headline }}</h1>
+<p>This page is my playground for testing layouts, HTML, and Liquid loops!</p>
+
+<div style="background-color: #fff3cd; border-left: 5px solid {{ page.custom_color }}; padding: 15px; margin: 20px 0;">
+  <h3>Loop Test Below:</h3>
+  <ul>
+    {% for item in page.items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<p><a href="/">← Go back to the homepage</a></p>
